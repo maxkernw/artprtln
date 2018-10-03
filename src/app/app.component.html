@@ -1,8 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
 
 </div>
 <h2> {{title}} </h2>
-<div>
-  <code>{{data | json}}</code>
+<div *ngFor="let sighting of sightings">
+  <app-sighting [sighting]="sighting"></app-sighting>
 </div>

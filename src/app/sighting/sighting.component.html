@@ -1,4 +1,10 @@
-<p>
-  {{sighting.author}}
-</p>
+<table>
+  <tr>{{sighting.author}}</tr>
+  <tr>{{sighting.commonName}}</tr>
+  <tr> {{sighting.owner}}</tr>
+</table>
 
+<div>
+  <a [href]="url">
+    <img [src]="image" />
+  </a>

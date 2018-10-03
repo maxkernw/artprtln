@@ -5,6 +5,11 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SightingComponent } from './sighting/sighting.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +17,8 @@ import { SightingComponent } from './sighting/sighting.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

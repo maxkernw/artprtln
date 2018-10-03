@@ -10,7 +10,6 @@ import { Response, Meta } from './response';
 })
 export class AppComponent implements OnInit {
 
-  title = 'artprtln';
   sightings: Sightning[];
 
   readonly url = '/v2/sightings?dateFrom=2018-10-01&dateTo=2018-10-02';

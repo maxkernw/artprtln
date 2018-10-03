@@ -1,8 +1,13 @@
+<app-nav></app-nav>
 <div class="container">
   <h1 class="title"> {{title}} </h1>
-  <div class="columns is-full  ">
-    <div class="column" *ngFor="let sighting of sightings">
-      <app-sighting [sighting]="sighting"></app-sighting>
+  <div class="container is-fluid">
+    <div class="section">
+      <div class="columns">
+        <div class="column" *ngFor="let sighting of sightings">
+          <app-sighting [sighting]="sighting"></app-sighting>
+        </div>
+      </div>
     </div>
   </div>
 </div>

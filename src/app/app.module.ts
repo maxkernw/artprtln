@@ -8,12 +8,14 @@ import { SightingComponent } from './sighting/sighting.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { NavComponent } from './nav/nav.component';
 library.add(fas);
 
 @NgModule({
   declarations: [
     AppComponent,
-    SightingComponent
+    SightingComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

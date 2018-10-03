@@ -1,10 +1,8 @@
 <div class="container">
-    <h1 class="title"> {{title}} </h1>
-  <div class="columns">
-    <div *ngFor="let sighting of sightings">
-      <div class="column">
-        <app-sighting [sighting]="sighting"></app-sighting>
-      </div>
+  <h1 class="title"> {{title}} </h1>
+  <div class="columns is-full  ">
+    <div class="column" *ngFor="let sighting of sightings">
+      <app-sighting [sighting]="sighting"></app-sighting>
     </div>
   </div>
-  <div class="columns">
+</div>

@@ -9,7 +9,7 @@ import { IHttpService } from './http.service.interface';
 })
 export class HttpService implements IHttpService {
 
-  private baseUrl = environment.url;
+  private readonly baseUrl = environment.url;
 
   constructor(private http: HttpClient) { }
 
